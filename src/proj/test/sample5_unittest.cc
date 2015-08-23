@@ -141,7 +141,7 @@ TEST_F(IntegerFunctionTest, IsPrime) {
 // The QueueTest test fixture has some logic and shared objects in
 // addition to what's in QuickTest already.  We define the additional
 // stuff inside the body of the test fixture, as usual.
-class QueueTest : public QuickTest {
+class QueueTest5 : public QuickTest {
  protected:
   virtual void SetUp() {
     // First, we need to set up the super fixture (QuickTest).
@@ -170,12 +170,12 @@ class QueueTest : public QuickTest {
 // Now, let's write tests using the QueueTest fixture.
 
 // Tests the default constructor.
-TEST_F(QueueTest, DefaultConstructor) {
+TEST_F(QueueTest5, DefaultConstructor) {
   EXPECT_EQ(0u, q0_.Size());
 }
 
 // Tests Dequeue().
-TEST_F(QueueTest, Dequeue) {
+TEST_F(QueueTest5, Dequeue) {
   int* n = q0_.Dequeue();
   EXPECT_TRUE(n == NULL);
 
