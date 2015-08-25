@@ -11,8 +11,8 @@ Q := @
 #########################
 # directory listing
 #########################
-SRC_DIR = src
-BUILD_DIR = build
+SRC_DIR := src
+BUILD_DIR := build
 BUILD_INCLUDE_DIR := $(BUILD_DIR)/src
 INCLUDE_DIRS += $(BUILD_INCLUDE_DIR) ./src ./include
 
